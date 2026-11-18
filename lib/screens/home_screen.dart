@@ -7,7 +7,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('Know Syria')),
       body: ListView(children: [
-        ListTile(leading: const Icon(Icons.mic), title: const Text('Voice Assistant'), onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const VoiceAssistantScreen()))),
+        ListTile(leading: const Icon(Icons.mic), title: const Text('Assistant'), onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const VoiceAssistantScreen()))),
         ListTile(leading: const Icon(Icons.edit), title: const Text('Whiteboard'), onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const WhiteboardScreen()))),
         ListTile(leading: const Icon(Icons.book), title: const Text('Curriculum'), onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const CurriculumScreen()))),
       ]),
